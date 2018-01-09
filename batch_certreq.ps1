@@ -22,7 +22,7 @@ cd $requestFilesPath
 New-Item -Name $requestOutFolderName -ItemType folder
 
 # Run a certreq for each item in the $requestFilesPath
-$requestOutFiles = foreach ($item in $requestFiles) {
+foreach ($item in $requestFiles) {
 
     $outFileName = -join($item, '.req')
     
